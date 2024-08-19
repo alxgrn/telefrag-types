@@ -2,18 +2,16 @@
   "private": false,
   "name": "@alxgrn/telefrag-types",
   "version": "0.0.3",
-  "type": "module",
-  "types": "./index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts"
+  "projects": [
+    "https://github.com/alxgrn/telefrag-types"
+  ],
+  "devDependencies": {
+    "@alxgrn/telefrag-types": "workspace:."
+  },
+  "owners": [
+    {
+      "name": "Alexander Fedorov",
+      "githubUsername": "alxgrn"
     }
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Alexander Fedorov",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/alxgrn/telefrag-types#readme",
-  "description": "The Daily Telefrag Types"
+  ]
 }
