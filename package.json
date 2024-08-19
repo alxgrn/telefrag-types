@@ -2,16 +2,15 @@
   "private": false,
   "name": "@alxgrn/telefrag-types",
   "version": "0.0.4",
-  "projects": [
-    "https://github.com/alxgrn/telefrag-types"
-  ],
-  "devDependencies": {
-    "@alxgrn/telefrag-types": "workspace:."
+  "description": "Types for The Daily Telefarg project",
+  "homepage": "https://github.com/alxgrn/telefrag-types",
+  "main": "",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxgrn/telefrag-types.git"
   },
-  "owners": [
-    {
-      "name": "Alexander Fedorov",
-      "githubUsername": "alxgrn"
-    }
-  ]
+  "bugs": {
+    "url": "https://github.com/alxgrn/telefrag/issues"
+  }
 }
