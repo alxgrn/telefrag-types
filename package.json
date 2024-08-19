@@ -1,8 +1,14 @@
 {
-  "private": true,
+  "private": false,
   "name": "@alxgrn/telefrag-types",
   "version": "0.0.2",
+  "type": "module",
   "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

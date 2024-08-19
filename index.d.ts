@@ -1,5 +1,5 @@
 /**
- * Файл на диске
+ * Файл
  */
 export type TFileType = 'cover'|'figure'|'logo'|'back';
 export type TFile = {
@@ -99,7 +99,7 @@ export type TCompany = {
     modified: string;
 };
 /**
- * Статья
+ * Публикация
  */
 export type TArticleType = 'long'|'blog'|'news'|'post';
 export type TArticle = {
@@ -253,7 +253,6 @@ export type TArticleToGroupView = TArticleToGroup & TArticle & {
     project_id: number | null;
     company_id: number | null;
 };
-
 /**
  * Игровой жанр
  */
@@ -263,7 +262,6 @@ export type TGenre = {
     slug: string;
     weight: number;
 };
-
 /**
  * Игровая платформа
  */
@@ -272,7 +270,6 @@ export type TPlatform = {
     name: string;
     weight: number;
 };
-
 /**
  * Жалоба
  */
@@ -286,7 +283,6 @@ export type TComplaint = {
     status: 'new'|'inprogress'|'closed';
     created: string;
 };
-
 /**
  * Отзыв
  */
@@ -302,7 +298,6 @@ export type TReview = {
     created: string;
     modified: string;
 };
-
 /**
  * Запись в таблице жюри
  */
@@ -324,7 +319,7 @@ export type TStage = {
 /**
  * Подключение к Телеграм
  */
-type TTgConnect = {
+export type TTgConnect = {
     tgid: number;
     code: string;
     first_name: string;
