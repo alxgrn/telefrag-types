@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@alxgrn/telefrag-types",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Types for The Daily Telefarg project",
   "homepage": "https://github.com/alxgrn/telefrag-types",
   "main": "",
