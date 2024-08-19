@@ -2,6 +2,7 @@
   "private": false,
   "name": "@alxgrn/telefrag-types",
   "version": "0.0.5",
+  "license": "Apache-2.0",
   "description": "Types for The Daily Telefarg project",
   "homepage": "https://github.com/alxgrn/telefrag-types",
   "main": "",
@@ -12,5 +13,6 @@
   },
   "bugs": {
     "url": "https://github.com/alxgrn/telefrag/issues"
-  }
+  },
+  "typeScriptVersion": "4.5"
 }
