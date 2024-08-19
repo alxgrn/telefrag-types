@@ -1,4 +1,3 @@
-export namespace Telefrag {
 /**
  * Файл
  */
@@ -329,5 +328,3 @@ export type TTgConnect = {
     created: string;
     used: string | null;
 };
-
-} // export namespace
