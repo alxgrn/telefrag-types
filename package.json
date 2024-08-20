@@ -13,11 +13,5 @@
   },
   "bugs": {
     "url": "https://github.com/alxgrn/telefrag/issues"
-  },
-  "devDependencies": {
-    "typescript": "^5.5.4"
-  },
-  "scripts": {
-    "build": "tsc"
   }
 }
