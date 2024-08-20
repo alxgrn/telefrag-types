@@ -1,7 +1,7 @@
 /**
  * Файл
  */
-export type TFileType = 'cover'|'figure'|'logo'|'back';
+export type TFileType = 'cover' | 'figure' | 'logo' | 'back';
 export type TFile = {
     id: number;
     url: string|null;
@@ -101,7 +101,7 @@ export type TCompany = {
 /**
  * Публикация
  */
-export type TArticleType = 'long'|'blog'|'news'|'post';
+export type TArticleType = 'long' | 'blog' | 'news' | 'post';
 export type TArticle = {
     id: number;
     user_id: number;
@@ -114,8 +114,8 @@ export type TArticle = {
     comments: number;
     created: string;
     modified: string;
-    published: string;
-    commented: string;
+    published: string | null;
+    commented: string | null;
     is_published: boolean;
     likes_num: number;
     likes_sum: number;
@@ -134,7 +134,7 @@ export type TComment = {
     content: string;
     created: string;
     modified: string;
-    replied: string|null;
+    replied: string | null;
     likes_num: number;
     likes_sum: number;
 };
@@ -279,8 +279,8 @@ export type TComplaint = {
     assigned_id: number|null;
     due_to: string;
     about_id: number;
-    about_type: 'article'|'comment'|'project'|'company'|'user';
-    status: 'new'|'inprogress'|'closed';
+    about_type: 'article' | 'comment' | 'project' | 'company' | 'user';
+    status: 'new' | 'inprogress' | 'closed';
     created: string;
 };
 /**
