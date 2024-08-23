@@ -157,7 +157,7 @@ export type TEvent = {
     modified: string;
 };
 /**
- * Запуск (питч-сессия)
+ * Запуск
  */
 export type TLaunch = {
     id: number;
@@ -171,8 +171,8 @@ export type TLaunch = {
     until: string;
     created: string;
     modified: string;
-    apps_total: number; // из запроса
-    apps_approved: number; // из запроса
+    apps_total: number; // Из запроса
+    apps_approved: number; // Из запроса
 };
 /**
  * Заявка на участие
@@ -210,9 +210,9 @@ export type TOpenGraph = {
     image: string;
     image_width: number;
     image_height: number;
-    redirect: string; // в Open Graph этого нет, мы используем для передачи в шаблон роута для редиректа в клиенте
-    content?: string; // в Open Graph этого нет, мы используем для передачи в шаблон содержимого документа, если оно есть
-    wide_image?: boolean; // в Open Graph этого нет, мы используем для передачи флага о том, что надо отображать широкое превью картинки
+    redirect: string; // В Open Graph этого нет, мы используем для передачи в шаблон роута для редиректа в клиенте
+    content?: string; // В Open Graph этого нет, мы используем для передачи в шаблон содержимого документа, если оно есть
+    wide_image?: boolean; // В Open Graph этого нет, мы используем для передачи флага о том, что надо отображать широкое превью картинки
 };
 /**
  * Стрим
@@ -327,4 +327,26 @@ export type TTgConnect = {
     username: string | null;
     created: string;
     used: string | null;
+};
+/**
+ * Уведомления
+ */
+export type TNotificationType = 'like' | 'comment' | 'reply' | 'approve'; // Тип уведомления
+export type TNotificationFromType = 'user' | 'launch'; // Тип отправителя сообщения
+export type TNotificationAboutType = 'article' | 'comment' | 'application' | 'review'; // Тип объекта о котором происходит уведомление
+export type TNotification = {
+    id?: number; // Идентификатор есть после записи в БД
+    type: TNotificationType; // Тип уведомления
+    is_new?: boolean; // Является ли уведомление новым или уже было прочитано, есть после записи в БД
+    to_id: number; // Для кого предназначено уведомление - user_id
+    from_id: number; // Идентификатор отправителя сообщения
+    from_type: TNotificationFromType; // Тип отправителя сообщения
+    from_name: string | null; // Имя отправителя
+    from_logo: number | null; // Логотип отправителя
+    about_id: number; // Идентификатор объекта, о котором происходит уведомление
+    about_type: TNotificationAboutType; // Тип объекта, о котором происходит уведомление
+    about_name: string | null; // Имя объекта, о котором происходит уведомление
+    about_logo: number | null; // Логотип объекта, о котором происходит уведомление
+    payload: string | null; // Дополнительная информация
+    created: string; // Дата создания уведомления есть после записи в БД
 };
