@@ -82,6 +82,7 @@ export type TProject = {
     link_trailer: string | null;
     link_gameplay: string | null;
     link_build: string | null;
+    is_autoadded: boolean;
     created: string;
     modified: string;
 };
@@ -335,10 +336,11 @@ export type TTgConnect = {
 export type TNotificationType = 'like' | 'comment' | 'reply' | 'approve'; // Тип уведомления
 export type TNotificationFromType = 'user' | 'launch'; // Тип отправителя сообщения
 export type TNotificationAboutType = 'article' | 'comment' | 'application' | 'review'; // Тип объекта о котором происходит уведомление
+export type TNotificationNew = Omit<TNotification, 'id' | 'is_new' | 'created'>; // Новое уведомление до записи в базу
 export type TNotification = {
-    id?: number; // Идентификатор есть после записи в БД
+    id: number; // Идентификатор есть после записи в БД
     type: TNotificationType; // Тип уведомления
-    is_new?: boolean; // Является ли уведомление новым или уже было прочитано, есть после записи в БД
+    is_new: boolean; // Является ли уведомление новым или уже было прочитано, есть после записи в БД
     to_id: number; // Для кого предназначено уведомление - user_id
     from_id: number; // Идентификатор отправителя сообщения
     from_type: TNotificationFromType; // Тип отправителя сообщения
