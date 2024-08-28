@@ -181,6 +181,7 @@ export type TApplication = {
     id: number;
     launch_id: number;
     project_id: number;
+    bunch_id?: number | null; // добавляем JOIN-ом
     rank: number;
     rating: number;
     reviews: number;
