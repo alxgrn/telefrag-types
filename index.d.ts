@@ -350,3 +350,24 @@ export type TNotification = {
     payload: string | null; // Дополнительная информация
     created: string; // Дата создания уведомления есть после записи в БД
 };
+/**
+ * Связка ключей доступа к проекту
+ */
+export type TBunch = {
+    id: number;
+    name: string;
+    project_id: number;
+    application_id: number | null;
+    created: string;
+};
+/**
+ * Ключ доступа к проекту
+ */
+export type TKey = {
+    id: number;
+    code: string;
+    bunch_id: number;
+    user_id: number | null;
+    created: string;
+    used: string | null;
+};
