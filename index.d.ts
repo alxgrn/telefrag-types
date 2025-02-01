@@ -58,6 +58,8 @@ export type TProfile = {
     link_vk: string | null;
     link_homepage: string | null;
     link_telegram: string | null;
+    notify_newart: boolean;
+    notify_newprj: boolean;
 };
 /**
  * Проект
