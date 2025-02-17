@@ -18,6 +18,7 @@ export type TFile = {
     project_id: number|null;
     company_id: number|null;
     group_id: number|null;
+    launch_id: number|null;
 };
 /**
  * Пользователь системы
@@ -164,6 +165,9 @@ export type TEvent = {
  */
 export type TLaunch = {
     id: number;
+    user_id: number;
+    logo_id: number | null;
+    back_id: number | null;
     name: string;
     info: string | null;
     approval: 'auto' | 'manual';
