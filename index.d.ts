@@ -61,6 +61,7 @@ export type TProfile = {
     link_telegram: string | null;
     notify_newart: boolean;
     notify_newprj: boolean;
+    need_jury: boolean;
 };
 /**
  * Проект
@@ -86,6 +87,7 @@ export type TProject = {
     link_gameplay: string | null;
     link_build: string | null;
     is_autoadded: boolean;
+    need_launch: boolean;
     created: string;
     modified: string;
 };
