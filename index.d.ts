@@ -183,6 +183,8 @@ export type TLaunch = {
     modified: string;
     apps_total: number; // Из запроса
     apps_approved: number; // Из запроса
+    reviews: number; // Из запроса
+    experts: number; // Из запроса
 };
 /**
  * Заявка на участие
