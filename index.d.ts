@@ -184,7 +184,7 @@ export type TLaunch = {
     apps_total: number; // Из запроса
     apps_approved: number; // Из запроса
     reviews: number; // Из запроса
-    experts: number; // Из запроса
+    juries: number; // Из запроса
 };
 /**
  * Заявка на участие
