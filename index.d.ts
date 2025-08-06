@@ -175,16 +175,18 @@ export type TLaunch = {
     info: string | null;
     approval: 'auto' | 'manual';
     evaluators: 'all' | 'jury' | 'competitors';
-    start: string;
-    stop: string;
-    after: string;
-    until: string;
+    start: string; // Дата начала оценки
+    stop: string; // Дата окончания оценки
+    after: string; // Дата начала сбора заявок
+    until: string; // Дата окончания сбора заявок
     created: string;
     modified: string;
-    apps_total: number; // Из запроса
-    apps_approved: number; // Из запроса
-    reviews: number; // Из запроса
-    juries: number; // Из запроса
+    apps_total: number; // Из запроса - всего заявок
+    apps_approved: number; // Из запроса - одобрено заявок
+    reviews: number; // Из запроса - общее число оценок
+    juries: number; // Из запроса - число членов жюри
+    jury_reviews?: number; // Из запроса - число отзывов члена жюри
+    jury_rating?: number; // Из запроса - средняя оценка члена жюри
 };
 /**
  * Заявка на участие
