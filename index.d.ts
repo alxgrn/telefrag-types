@@ -201,7 +201,8 @@ export type TApplication = {
     reviews: number;
     reviewed: string;
     is_approved: boolean;
-    approved: string;
+    approved: string | null;
+    created: string;
 };
 /**
  * Код приглашения
@@ -321,6 +322,9 @@ export type TJury = {
     launch_id: number;
     rating: number;
     reviews: number;
+    is_approved: boolean;
+    approved: string | null;
+    created: string;
 };
 /**
  * Статус разработки
