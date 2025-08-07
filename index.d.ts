@@ -184,7 +184,8 @@ export type TLaunch = {
     apps_total: number; // Из запроса - всего заявок
     apps_approved: number; // Из запроса - одобрено заявок
     reviews: number; // Из запроса - общее число оценок
-    juries: number; // Из запроса - число членов жюри
+    jury_total: number; // Из запроса - всего членов жюри
+    jury_approved: number; // Из запроса - одобрено членов жюри
     jury_reviews?: number; // Из запроса - число отзывов члена жюри
     jury_rating?: number; // Из запроса - средняя оценка члена жюри
 };
