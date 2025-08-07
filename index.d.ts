@@ -352,7 +352,7 @@ export type TTgConnect = {
  */
 export type TNotificationType = 'like' | 'comment' | 'reply' | 'approve'; // Тип уведомления
 export type TNotificationFromType = 'user' | 'launch'; // Тип отправителя сообщения
-export type TNotificationAboutType = 'article' | 'comment' | 'application' | 'review'; // Тип объекта о котором происходит уведомление
+export type TNotificationAboutType = 'article' | 'comment' | 'application' | 'review' | 'jury'; // Тип объекта о котором происходит уведомление
 export type TNotificationNew = Omit<TNotification, 'id' | 'is_new' | 'created'>; // Новое уведомление до записи в базу
 export type TNotification = {
     id: number; // Идентификатор есть после записи в БД
