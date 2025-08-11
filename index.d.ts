@@ -59,6 +59,7 @@ export type TProfile = {
     link_vk: string | null;
     link_homepage: string | null;
     link_telegram: string | null;
+    link_donate: string | null;
     notify_newart: boolean;
     notify_newprj: boolean;
     need_jury: boolean;
