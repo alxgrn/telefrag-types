@@ -29,6 +29,7 @@ export type TUser = {
     email: string;
     password?: string; // Мы всегда удаляем пароль из выдачи
     is_root: boolean;
+    can_invite: boolean; // Может приглашать пользователей без ограничений
     restore_code?: string | null; // Мы всегда удаляем код из выдачи
     created: string;
 };
