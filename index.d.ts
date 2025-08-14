@@ -394,3 +394,14 @@ export type TKey = {
     created: string;
     used: string | null;
 };
+/**
+ * Бедж достижения
+ * Возвращается в запросе списка беджей пользователя
+ */
+type TBadge = {
+    user_id: number;
+    badge_id: number;
+    name: string;
+    info: string;
+    value: number;
+};
