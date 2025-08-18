@@ -316,6 +316,8 @@ export type TReview = {
     negative: string;
     created: string;
     modified: string;
+    likes_num: number;
+    likes_sum: number;
 };
 /**
  * Запись в таблице жюри
