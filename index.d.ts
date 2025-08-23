@@ -309,7 +309,7 @@ export type TReview = {
     id: number;
     user_id: number;
     application_id: number;
-    review_id: number|null;
+    review_id: number | null;
     rating: number;
     comment: string;
     positive: string;
@@ -318,6 +318,7 @@ export type TReview = {
     modified: string;
     likes_num: number;
     likes_sum: number;
+    video: string;
 };
 /**
  * Запись в таблице жюри
