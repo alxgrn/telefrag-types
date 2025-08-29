@@ -326,8 +326,10 @@ export type TReview = {
 export type TJury = {
     user_id: number;
     launch_id: number;
+    value: number;
     rating: number;
     reviews: number;
+    replies: number;
     is_approved: boolean;
     approved: string | null;
     created: string;
