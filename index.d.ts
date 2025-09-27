@@ -410,3 +410,24 @@ type TBadge = {
     info: string;
     value: number;
 };
+/**
+ * Game jam
+ */
+type TJam = {
+    id: number;
+    name: string;
+    info: string | null;
+    format: string | null;
+    content: string | null;
+    user_id: number;
+    logo_id: number | null;
+    back_id: number | null;
+    apps_start: string;
+    apps_stop: string;
+    proj_start: string;
+    proj_stop: string;
+    jury_start: string;
+    jury_stop: string;
+    created: string;
+    modified: string;
+};
