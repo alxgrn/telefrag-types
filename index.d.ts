@@ -19,6 +19,7 @@ export type TFile = {
     company_id: number|null;
     group_id: number|null;
     launch_id: number|null;
+    jam_id: number|null;
 };
 /**
  * Пользователь системы
