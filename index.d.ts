@@ -424,6 +424,7 @@ type TJam = {
     user_id: number;
     logo_id: number | null;
     back_id: number | null;
+    cover_id: number | null;
     apps_start: string;
     apps_stop: string;
     proj_start: string;
