@@ -434,3 +434,13 @@ type TJam = {
     created: string;
     modified: string;
 };
+/**
+ * Критерии оценки джема
+ */
+type TJamCriterias = {
+    id: number;
+    name: string;
+    info: string | null;
+    jam_id: number;
+    weight: number;
+};
