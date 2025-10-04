@@ -437,7 +437,7 @@ type TJam = {
 /**
  * Критерии оценки джема
  */
-type TJamCriterias = {
+type TJamCriteria = {
     id: number;
     name: string;
     info: string | null;
