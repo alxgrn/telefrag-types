@@ -444,3 +444,10 @@ type TJamCriteria = {
     jam_id: number;
     weight: number;
 };
+/**
+ * Запись в таблице жюри джема
+ */
+export type TJamJury = {
+    jam_id: number;
+    user_id: number;
+};
