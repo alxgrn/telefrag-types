@@ -451,3 +451,22 @@ export type TJamJury = {
     jam_id: number;
     user_id: number;
 };
+/**
+ * Команда в джеме
+ */
+export type TJamTeam = {
+    id: number;
+    jam_id: number;
+    user_id: number;
+    name: string;
+    info: string | null;
+    is_open: boolean;
+};
+/**
+ * Участник джема
+ */
+export type TJamParticipant = {
+    team_id: number;
+    user_id: number;
+    is_approved: boolean;
+};
