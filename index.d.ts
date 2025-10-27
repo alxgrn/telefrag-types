@@ -471,3 +471,20 @@ export type TJamParticipant = {
     user_id: number;
     is_approved: boolean;
 };
+/**
+ * Оценка проекта джема
+ */
+export type TJamReview = {
+    id: number;
+    content: string;
+    jury_id: number;
+    project_id: number;
+};
+/**
+ * Оценка по конкретному критерию
+ */
+export type TJamEvaluation = {
+    review_id: number;
+    criteria_id: number;
+    value: number;
+};
