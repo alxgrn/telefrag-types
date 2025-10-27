@@ -449,6 +449,7 @@ type TJamCriteria = {
  * Запись в таблице жюри джема
  */
 export type TJamJury = {
+    id: number;
     jam_id: number;
     user_id: number;
 };
