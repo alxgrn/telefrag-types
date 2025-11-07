@@ -489,3 +489,12 @@ export type TJamEvaluation = {
     criteria_id: number;
     value: number;
 };
+
+/**
+ * Статистика оценка по конкретному проекту
+ */
+export type TJamStats = {
+    project_id: number;
+    criteria_id: number;
+    value: number;
+};
