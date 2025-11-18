@@ -178,6 +178,7 @@ export type TLaunch = {
     user_id: number;
     logo_id: number | null;
     back_id: number | null;
+    cover_id: number | null;
     name: string;
     info: string | null;
     approval: 'auto' | 'manual';
