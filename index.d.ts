@@ -30,6 +30,7 @@ export type TUser = {
     email: string;
     password?: string; // Мы всегда удаляем пароль из выдачи
     is_root: boolean;
+    is_blocked: boolean;
     can_jam: boolean; // Может создавать джем
     can_invite: boolean; // Может приглашать пользователей без ограничений
     restore_code?: string | null; // Мы всегда удаляем код из выдачи
