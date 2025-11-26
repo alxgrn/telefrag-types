@@ -1,7 +1,7 @@
 /**
  * Файл
  */
-export type TFileType = 'cover' | 'figure' | 'logo' | 'back';
+export type TFileType = 'cover' | 'figure' | 'logo' | 'back' | 'gallery';
 export type TFile = {
     id: number;
     url: string|null;
