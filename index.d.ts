@@ -83,6 +83,8 @@ export type TProject = {
     jam_eval_num: number;
     name: string;
     info: string | null;
+    format: string | null;
+    content: string | null;
     stage: number | null;
     genres?: number[];
     platforms?: number[];
