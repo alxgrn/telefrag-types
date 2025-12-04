@@ -504,3 +504,41 @@ export type TJamStats = {
     criteria_id: number;
     value: number;
 };
+
+/**
+ * Чат
+ */
+type TChat = {
+    id: number;
+    //name: string | null;
+    //info: string | null;
+    peer_id: number | null;
+    user_id: number | null;
+    project_id: number | null;
+    company_id: number | null;
+    launch_id:  number | null;
+    jam_id: number | null;
+    created: string;
+    updated: string;
+    peer_read: string;
+    side_read: string;
+};
+
+/**
+ * Сообщение в чате
+ */
+type TMessage = {
+    id: number;
+    chat_id: number;
+    user_id: number;
+    reply_to: number | null;
+    format: string;
+    content: string;
+    created: string;
+    updated: string;
+};
+
+/**
+ * Типы приватных чатов
+ */
+type TPrivateChatType = 'user' | 'project' | 'company' | 'launch' | 'jam';
