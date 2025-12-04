@@ -510,8 +510,9 @@ export type TJamStats = {
  */
 type TChat = {
     id: number;
-    //name: string | null;
-    //info: string | null;
+    name: string | null;
+    info: string | null;
+    logo_id: number | null;
     peer_id: number | null;
     user_id: number | null;
     project_id: number | null;
