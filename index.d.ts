@@ -67,6 +67,7 @@ export type TProfile = {
     notify_newart: boolean;
     notify_newprj: boolean;
     need_jury: boolean;
+    flag_chats: 'enabled' | 'disabled' | 'friends';
 };
 /**
  * Проект
