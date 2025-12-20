@@ -524,6 +524,8 @@ type TChat = {
     updated: string;
     peer_read: string;
     side_read: string;
+    peer_new: number;
+    side_new: number;
 };
 
 /**
