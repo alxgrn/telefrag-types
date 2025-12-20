@@ -13,5 +13,8 @@
   },
   "bugs": {
     "url": "https://github.com/alxgrn/telefrag/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
