@@ -523,12 +523,15 @@ type TChatDB = {
     side_read: string;
 };
 
-type TChat = TChatDB & {
+type TChatWithNewMsg = TChatDB & {
+    side_new: number;
+    peer_new: number;
+};
+
+type TChat = TChatWithNewMsg & {
     name: string | null;
     info: string | null;
     logo_id: number | null;
-    side_new: number;
-    peer_new: number;
     peer_name: string | null;
     peer_info: string | null;
     peer_logo: number | null;
