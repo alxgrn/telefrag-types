@@ -509,11 +509,8 @@ export type TJamStats = {
 /**
  * Чат
  */
-type TChat = {
+type TChatDB = {
     id: number;
-    name: string | null;
-    info: string | null;
-    logo_id: number | null;
     peer_id: number | null;
     user_id: number | null;
     project_id: number | null;
@@ -524,8 +521,17 @@ type TChat = {
     updated: string;
     peer_read: string;
     side_read: string;
-    peer_new: number;
+};
+
+type TChat = TChatDB & {
+    name: string | null;
+    info: string | null;
+    logo_id: number | null;
     side_new: number;
+    peer_new: number;
+    peer_name: string | null;
+    peer_info: string | null;
+    peer_logo: number | null;
 };
 
 /**
