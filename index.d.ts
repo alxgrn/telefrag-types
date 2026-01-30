@@ -555,3 +555,29 @@ type TMessage = {
  * Типы приватных чатов
  */
 type TPrivateChatType = 'user' | 'project' | 'company' | 'launch' | 'jam';
+
+/**
+ * Категория вакансии или резюме
+ */
+type TJobCategory = {
+    id: number;
+    name: string;
+    weight: number;
+};
+
+/**
+ * Вакансия
+ */
+type TVacancy = {
+    id: number;
+    project_id: number;
+    category_id: number;
+    name: string;
+    info: string | null;
+    city: string | null;
+    content: string;
+    work_format: 'office'|'hybrid'|'remote';
+    is_commercial: boolean;
+    created: string;
+    updated: string;
+};
