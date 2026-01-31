@@ -568,7 +568,7 @@ type TJobCategory = {
 /**
  * Вакансия
  */
-type TVacancy = {
+type TVacancyDB = {
     id: number;
     project_id: number;
     category_id: number;
@@ -580,4 +580,10 @@ type TVacancy = {
     is_commercial: boolean;
     created: string;
     updated: string;
+};
+
+type TVacancy = TVacancyDB & {
+    user_id: number;
+    project_name: string;
+    project_logo: number | null;
 };
