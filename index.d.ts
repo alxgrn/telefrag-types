@@ -90,6 +90,7 @@ export type TProject = {
     genres?: number[];
     platforms?: number[];
     gallery?: number[];
+    descriptors?: number[];
     link_vk: string | null;
     link_steam: string | null;
     link_vkplay: string | null;
@@ -297,6 +298,16 @@ export type TGenre = {
 export type TPlatform = {
     id: number;
     name: string;
+    weight: number;
+};
+/**
+ * Игровой дескриптор
+ */
+export type TDescriptor = {
+    id: number;
+    logo: string;
+    name: string;
+    info: string;
     weight: number;
 };
 /**
@@ -587,3 +598,21 @@ type TVacancy = TVacancyDB & {
     project_name: string;
     project_logo: number | null;
 };
+
+/**
+ * Инвест-профиль
+ *
+type TInvestProfileDB = {
+    id: number;
+    project_id: number;
+    stage_id: number;
+    idea: string; // Идея игры
+    audience: string; // Целевая аудитория
+    similar: string; // Похожие игры
+    features: string; // Уникальные преимущества
+    team: string; // Команда
+    plan: string; // Что будете делать с деньгами
+    created: string;
+    updated: string;
+}
+*/
