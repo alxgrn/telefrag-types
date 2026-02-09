@@ -84,6 +84,7 @@ export type TProject = {
     jam_eval_num: number;
     name: string;
     info: string | null;
+    rars: number | null;
     format: string | null;
     content: string | null;
     stage: number | null;
