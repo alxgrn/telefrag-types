@@ -104,6 +104,7 @@ export type TProject = {
     need_launch: boolean;
     created: string;
     modified: string;
+    deleted: string | null;
 };
 /**
  * Компания
@@ -598,6 +599,24 @@ type TVacancy = TVacancyDB & {
     user_id: number;
     project_name: string;
     project_logo: number | null;
+};
+
+/**
+ * Резюме
+ */
+type TResumeDB = {
+    id: number;
+    user_id: number;
+    category_id: number;
+    name: string;
+    info: string | null;
+    city: string | null;
+    content: string;
+    portfolio: string;
+    work_format: 'office'|'hybrid'|'remote';
+    is_commercial: boolean;
+    created: string;
+    updated: string;
 };
 
 /**
