@@ -1,12 +1,14 @@
 /**
  * Файл
  */
+export type TFileStatus = 'completed'|'uploading'|'processing';
 export type TFileType = 'cover'|'figure'|'logo'|'back'|'gallery'|'bigfile';
 export type TFile = {
     id: number;
     url: string|null;
     name: string;
     type: TFileType;
+    status: TFileStatus;
     mimetype: string;
     original_name: string;
     size: number;
