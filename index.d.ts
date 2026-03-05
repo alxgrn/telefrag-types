@@ -1,7 +1,7 @@
 /**
  * Файл
  */
-export type TFileType = 'cover' | 'figure' | 'logo' | 'back' | 'gallery'|'bigfile';
+export type TFileType = 'cover'|'figure'|'logo'|'back'|'gallery'|'bigfile';
 export type TFile = {
     id: number;
     url: string|null;
@@ -79,6 +79,7 @@ export type TProject = {
     logo_id: number | null;
     back_id: number | null;
     cover_id: number | null;
+    build_id: number | null;
     article_id: number | null;
     jam_team_id: number | null;
     jam_eval_avg: number;
