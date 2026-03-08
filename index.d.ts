@@ -14,6 +14,7 @@ export type TFile = {
     size: number;
     width: number;
     height: number;
+    downloads: number;
     created: string;
     modified: string;
     article_id: number|null;
