@@ -431,7 +431,7 @@ export type TKey = {
  * Бедж достижения
  * Возвращается в запросе списка беджей пользователя
  */
-type TBadge = {
+export type TBadge = {
     user_id: number;
     badge_id: number;
     name: string;
@@ -441,7 +441,8 @@ type TBadge = {
 /**
  * Game jam
  */
-type TJam = {
+export type TJamEvaluators = 'users'|'juries'|'participants'|'teams';
+export type TJam = {
     id: number;
     name: string;
     info: string | null;
@@ -451,6 +452,7 @@ type TJam = {
     logo_id: number | null;
     back_id: number | null;
     cover_id: number | null;
+    evaluators: TJamEvaluators;
     apps_start: string;
     apps_stop: string;
     proj_start: string;
@@ -463,7 +465,7 @@ type TJam = {
 /**
  * Критерии оценки джема
  */
-type TJamCriteria = {
+export type TJamCriteria = {
     id: number;
     name: string;
     info: string | null;
@@ -503,7 +505,8 @@ export type TJamParticipant = {
 export type TJamReview = {
     id: number;
     content: string;
-    jury_id: number;
+    user_id: number;
+    //jury_id: number;
     project_id: number;
 };
 /**
@@ -527,7 +530,7 @@ export type TJamStats = {
 /**
  * Чат
  */
-type TChatDB = {
+export type TChatDB = {
     id: number;
     peer_id: number | null;
     user_id: number | null;
@@ -541,12 +544,12 @@ type TChatDB = {
     side_read: string;
 };
 
-type TChatWithNewMsg = TChatDB & {
+export type TChatWithNewMsg = TChatDB & {
     side_new: number;
     peer_new: number;
 };
 
-type TChat = TChatWithNewMsg & {
+export type TChat = TChatWithNewMsg & {
     name: string | null;
     info: string | null;
     logo_id: number | null;
@@ -558,7 +561,7 @@ type TChat = TChatWithNewMsg & {
 /**
  * Сообщение в чате
  */
-type TMessage = {
+export type TMessage = {
     id: number;
     chat_id: number;
     user_id: number;
@@ -572,12 +575,12 @@ type TMessage = {
 /**
  * Типы приватных чатов
  */
-type TPrivateChatType = 'user' | 'project' | 'company' | 'launch' | 'jam';
+export type TPrivateChatType = 'user' | 'project' | 'company' | 'launch' | 'jam';
 
 /**
  * Категория вакансии или резюме
  */
-type TJobCategory = {
+export type TJobCategory = {
     id: number;
     name: string;
     weight: number;
@@ -586,7 +589,7 @@ type TJobCategory = {
 /**
  * Вакансия
  */
-type TVacancyDB = {
+export type TVacancyDB = {
     id: number;
     project_id: number;
     category_id: number;
@@ -600,7 +603,7 @@ type TVacancyDB = {
     updated: string;
 };
 
-type TVacancy = TVacancyDB & {
+export type TVacancy = TVacancyDB & {
     user_id: number;
     project_name: string;
     project_logo: number | null;
@@ -609,7 +612,7 @@ type TVacancy = TVacancyDB & {
 /**
  * Резюме
  */
-type TResumeDB = {
+export type TResumeDB = {
     id: number;
     user_id: number;
     category_id: number;
@@ -627,7 +630,7 @@ type TResumeDB = {
 /**
  * Инвест-профиль
  *
-type TInvestProfileDB = {
+export type TInvestProfileDB = {
     id: number;
     project_id: number;
     stage_id: number;
