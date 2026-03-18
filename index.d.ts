@@ -441,7 +441,6 @@ export type TBadge = {
 /**
  * Game jam
  */
-export type TJamEvaluators = 'users'|'juries'|'participants'|'teams';
 export type TJam = {
     id: number;
     name: string;
@@ -452,13 +451,16 @@ export type TJam = {
     logo_id: number | null;
     back_id: number | null;
     cover_id: number | null;
-    evaluators: TJamEvaluators;
-    apps_start: string;
-    apps_stop: string;
-    proj_start: string;
-    proj_stop: string;
-    jury_start: string;
-    jury_stop: string;
+    is_jury: boolean;  // может ли жюри оценивать проекты
+    is_teams: boolean; // могут ли команды оценивать проекты
+    is_parts: boolean; // могут ли участники оценивать проекты
+    is_users: boolean; // могут ли все пользователи оценивать проекты
+    apps_start: string; // начало приема заявок на участие
+    apps_stop: string; // конец приема заявок на участие
+    proj_start: string; // начало приема проектов
+    proj_stop: string; // конец приема проектов
+    jury_start: string; // начало приема оценок (TODO: переименовать в eval_start)
+    jury_stop: string; // конец приема оценок (TODO: переименовать в eval_stop)
     created: string;
     modified: string;
 };
