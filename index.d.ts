@@ -507,8 +507,8 @@ export type TJamParticipant = {
 export type TJamReview = {
     id: number;
     content: string;
+    jam_id: number;
     user_id: number;
-    //jury_id: number;
     project_id: number;
 };
 /**
