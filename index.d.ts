@@ -526,7 +526,10 @@ export type TJamEvaluation = {
 export type TJamStats = {
     project_id: number;
     criteria_id: number;
-    value: number;
+    jury: number;
+    teams: number;
+    parts: number;
+    users: number;
 };
 
 /**
