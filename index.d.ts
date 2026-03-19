@@ -520,12 +520,15 @@ export type TJamEvaluation = {
 };
 
 /**
- * Статистика оценка по конкретному проекту
+ * Статистика оценок по критерию для конкретного проекта в джеме
  */
 export type TJamStats = {
     jam_project_id: number;
     criteria_id: number;
-    value: number;
+    jury_avg: number;
+    teams_avg: number;
+    parts_avg: number;
+    users_avg: number;
 };
 
 /**
