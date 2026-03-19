@@ -507,9 +507,8 @@ export type TJamParticipant = {
 export type TJamReview = {
     id: number;
     content: string;
-    jam_id: number;
     user_id: number;
-    project_id: number;
+    jam_project_id: number;
 };
 /**
  * Оценка по конкретному критерию
@@ -524,12 +523,26 @@ export type TJamEvaluation = {
  * Статистика оценка по конкретному проекту
  */
 export type TJamStats = {
-    project_id: number;
+    jam_project_id: number;
     criteria_id: number;
-    jury: number;
-    teams: number;
-    parts: number;
-    users: number;
+    value: number;
+};
+
+/**
+ * Проект в джеме
+ */
+export type TJamProject = {
+    id: number;
+    team_id: number;
+    project_id: number;
+    jury_avg: number;
+    jury_num: number;
+    teams_avg: number;
+    teams_num: number;
+    parts_avg: number;
+    parts_num: number;
+    users_avg: number;
+    users_num: number;
 };
 
 /**
