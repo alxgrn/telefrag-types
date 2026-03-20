@@ -509,6 +509,8 @@ export type TJamReview = {
     content: string;
     user_id: number;
     jam_project_id: number;
+    created: string;
+    modified: string;
 };
 /**
  * Оценка по конкретному критерию
@@ -525,10 +527,14 @@ export type TJamEvaluation = {
 export type TJamStats = {
     jam_project_id: number;
     criteria_id: number;
-    jury_avg: number;
-    teams_avg: number;
-    parts_avg: number;
-    users_avg: number;
+    jury_avg: number;  // средние оценки членов жюри
+    teams_avg: number; // средние оценки капитанами команд
+    parts_avg: number; // средние оценки участников джема
+    users_avg: number; // средние оценки всех пользователей
+    jury_num: number;  // число оценок членов жюри
+    teams_num: number; // число оценок капитанов команд
+    parts_num: number; // число оценок участников джема
+    users_num: number; // число оценок всех пользователей
 };
 
 /**
@@ -538,14 +544,14 @@ export type TJamProject = {
     id: number;
     team_id: number;
     project_id: number;
-    jury_avg: number;
-    jury_num: number;
-    teams_avg: number;
-    teams_num: number;
-    parts_avg: number;
-    parts_num: number;
-    users_avg: number;
-    users_num: number;
+    jury_avg: number;  // средняя оценка членов жюри по всем критериям
+    jury_num: number;  // число оценок членов жюри
+    teams_avg: number; // средняя оценка капитанов команд по всем критериям
+    teams_num: number; // число оценок капитанов команд
+    parts_avg: number; // средняя оценка участников джема по всем критериям
+    parts_num: number; // число оценок участников джема
+    users_avg: number; // средняя оценка всех пользователей по всем критериям
+    users_num: number; // число оценок всех пользователей
 };
 
 /**
