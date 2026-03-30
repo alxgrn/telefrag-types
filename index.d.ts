@@ -84,9 +84,9 @@ export type TProject = {
     cover_id: number | null;
     build_id: number | null;
     article_id: number | null;
-    jam_team_id: number | null;
-    jam_eval_avg: number;
-    jam_eval_num: number;
+    jam_id?: number | null;
+    jam_team_id?: number | null;
+    jam_project_id?: number | null;
     name: string;
     info: string | null;
     rars: number | null;
