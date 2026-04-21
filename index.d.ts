@@ -492,6 +492,7 @@ export type TJamTeam = {
     name: string;
     info: string | null;
     is_open: boolean;
+    is_disqualified: boolean;
 };
 /**
  * Участник джема
