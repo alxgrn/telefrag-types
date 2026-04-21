@@ -491,6 +491,7 @@ export type TJamTeam = {
     user_id: number;
     name: string;
     info: string | null;
+    complaint: string | null;
     is_open: boolean;
     is_disqualified: boolean;
 };
