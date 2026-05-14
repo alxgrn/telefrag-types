@@ -657,6 +657,17 @@ export type TResumeDB = {
 };
 
 /**
+ * Статья расходов для проекта
+ */
+export type TExpense = {
+    id: number;
+    name: string;
+    info: string | null;
+    size: number;
+    project_id: number;
+};
+
+/**
  * Инвест-профиль
  *
 export type TInvestProfileDB = {
