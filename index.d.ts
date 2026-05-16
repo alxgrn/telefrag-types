@@ -668,6 +668,18 @@ export type TExpense = {
 };
 
 /**
+ * Этап плана развития
+ */
+export type TRoadmapItem = {
+    id: number;
+    name: string;
+    info: string | null;
+    year: number;
+    month: number; // от 0 до 11
+    project_id: number;
+};
+
+/**
  * Инвест-профиль
  *
 export type TInvestProfileDB = {
