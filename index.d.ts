@@ -680,6 +680,18 @@ export type TRoadmapItem = {
 };
 
 /**
+ * Референсы проекта
+ */
+export type TReference = {
+    id: number;
+    link: string;
+    logo: string;
+    name: string;
+    same: string | null;
+    diff: string | null;
+};
+
+/**
  * Инвест-профиль
  *
 export type TInvestProfileDB = {
