@@ -689,6 +689,7 @@ export type TReference = {
     name: string;
     same: string | null;
     diff: string | null;
+    project_id: number;
 };
 
 /**
