@@ -193,6 +193,8 @@ export type TLaunch = {
     cover_id: number | null;
     name: string;
     info: string | null;
+    format: string | null;
+    content: string | null;
     approval: 'auto' | 'manual';
     evaluators: 'all' | 'jury' | 'competitors';
     start: string; // Дата начала оценки
