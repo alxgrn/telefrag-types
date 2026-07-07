@@ -97,6 +97,7 @@ export type TProject = {
     platforms?: number[];
     gallery?: number[];
     descriptors?: number[];
+    expenses?: number;
     link_vk: string | null;
     link_steam: string | null;
     link_vkplay: string | null;
