@@ -631,6 +631,8 @@ export type TVacancyDB = {
     content: string;
     work_format: 'office'|'hybrid'|'remote';
     is_commercial: boolean;
+    is_published: boolean;
+    is_planned: boolean;
     created: string;
     updated: string;
 };
