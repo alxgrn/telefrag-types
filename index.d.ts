@@ -93,6 +93,7 @@ export type TProject = {
     format: string | null;
     content: string | null;
     stage: number | null;
+    engine: number | null;
     genres?: number[];
     platforms?: number[];
     gallery?: number[];
