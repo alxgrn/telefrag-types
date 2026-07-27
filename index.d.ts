@@ -376,6 +376,14 @@ export type TStage = {
     weight: number;
 };
 /**
+ * Движок
+ */
+export type TEngine = {
+    id: number;
+    name: string;
+    weight: number;
+};
+/**
  * Подключение к Телеграм
  */
 export type TTgConnect = {
