@@ -650,6 +650,7 @@ export type TVacancy = TVacancyDB & {
     user_id: number;
     project_name: string;
     project_logo: number | null;
+    project_caver: number | null;
 };
 
 /**
