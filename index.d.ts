@@ -47,6 +47,10 @@ export type TSession = {
     token: string;
     user: TUser;
     profile: TProfile;
+    subscription?: {
+        name: string;
+        slug: string;
+    } | null;
 };
 /**
  * Профиль пользователя
@@ -705,6 +709,22 @@ export type TReference = {
     same: string | null;
     diff: string | null;
     project_id: number;
+};
+
+/**
+ * Информация о подписке пользователя
+ */
+export type TSubscription = {
+    user_id: number;
+    subs_id: number;
+    subs_name: string;
+    subs_slug: string;
+    created: string;
+    expired: string;
+    status: string;
+    auto_renew: boolean;
+    has_access: boolean;
+    external_user_id: string;
 };
 
 /**
